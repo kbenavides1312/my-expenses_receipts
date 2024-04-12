@@ -17,14 +17,14 @@ source ~/.zshrc
 
 Create new rust app
 ```
-cargo new receipts-api
+cargo new stores-api
 ```
 
 You should have hello world example ready.
 
 Move to project folder and compile main.rs file
 ```
-cd receipts-api/src
+cd stores-api/src
 rustc main.rs
 ```
 
@@ -38,7 +38,7 @@ execute binary
 Add dependencies to `Cargo.toml` file
 ```
 [package]
-name = "receipts-api"
+name = "stores-api"
 version = "0.1.0"
 edition = "2021"
 
@@ -73,3 +73,5 @@ cargo run
 
 reference: https://dev.to/francescoxx/rust-crud-rest-api-3n45
 - https://alejandroaldana99.medium.com/c%C3%B3mo-crear-un-servidor-api-rest-con-rust-y-mongodb-2aae4e06d95c
+
+- [postgres type vs rust types](https://docs.rs/postgres/latest/postgres/types/trait.ToSql.html)

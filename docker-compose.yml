@@ -1,9 +1,9 @@
 version: '3.9'
 
 services:
-  receipts-api:
+  stores-api:
     container_name: rustapp
-    image: receipts-api:local
+    image: stores-api:local
     build:
       context: .
       dockerfile: Dockerfile

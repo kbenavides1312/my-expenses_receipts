@@ -1,13 +1,12 @@
 [package]
-name = "receipts-api"
+name = "stores-api"
 version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+postgres = "0.19"
 serde = { version = "1.0.144", features = ["derive"] }
-mongodb = "2.1"
-bson = { version = "2", features = ["chrono-0_4"] }
-tokio = "1"
-chrono = "0.4"
+serde_json = "1.0"
+serde_derive = "1.0"

@@ -6,40 +6,14 @@ use std::io::{ Read, Write };
 // use std::env;
 use std::any::Any;
 
-use serde_derive::Deserialize;
 use serde_xml_rs::from_str;
 
 
 #[macro_use]
 extern crate serde_derive;
 
-//Model: User struct with id, name, email
 #[derive(Serialize, Deserialize)]
-struct Receipt {
-    #[serde(rename = "Clave")]
-    clave: i32,
-    #[serde(rename = "CodigoActividad")]
-    codigo_actividad: i32,
-    #[serde(rename = "NumeroConsecutivo")]
-    numero_consecutivo: i32,
-    #[serde(rename = "FechaEmision")]
-    fechaEmision: NaiveDateTime,
-    #[serde(rename = "Emisor")]
-    emisor: Person,
-    #[serde(rename = "Receptor")]
-    receptor: Person,
-    #[serde(rename = "CondicionVenta")]
-    condicion_venta: i32,
-    #[serde(rename = "MedioPago")]
-    medio_pago: i32,
-    #[serde(rename = "DetalleServicio")]
-    detalle_servicio: Vec<ItemDetail>,
-    #[serde(rename = "ResumenFactura")]
-    ResumenFactura: ReceiptSummary,
-}
-
-#[derive(Serialize, Deserialize)]
-struct Person {
+struct Store {
     #[serde(rename = "Nombre")]
     nombre: String,
     #[serde(rename = "Identificacion")]
@@ -84,100 +58,6 @@ struct Identity {
     numero: i32,
 }
 
-#[derive(Serialize, Deserialize)]
-struct ItemDetail {
-    #[serde(rename = "NumeroLinea")]
-    NumeroLinea: i32,
-    #[serde(rename = "Codigo")]
-    Codigo: i32,
-    #[serde(rename = "CodigoComercial")]
-    CodigoComercial: CommercialCode,
-    #[serde(rename = "Cantidad")]
-    Cantidad: i32,
-    #[serde(rename = "UnidadMedida")]
-    UnidadMedida: i32,
-    #[serde(rename = "Detalle")]
-    Detalle: i32,
-    #[serde(rename = "PrecioUnitario")]
-    PrecioUnitario: i32,
-    #[serde(rename = "MontoTotal")]
-    MontoTotal: i32,
-    #[serde(rename = "SubTotal")]
-    SubTotal: i32,
-    #[serde(rename = "BaseImponible")]
-    BaseImponible: i32,
-    #[serde(rename = "Impuesto")]
-    Impuesto: ItemTaxDetail,
-    #[serde(rename = "ImpuestoNeto")]
-    ImpuestoNeto: i32,
-    #[serde(rename = "MontoTotalLinea")]
-    MontoTotalLinea: i32,
-}
-
-#[derive(Serialize, Deserialize)]
-struct ItemTaxDetail {
-    #[serde(rename = "Codigo")]
-    Codigo: i32,
-    #[serde(rename = "CodigoTarifa")]
-    CodigoTarifa: i32,
-    #[serde(rename = "Tarifa")]
-    Tarifa: i32,
-    #[serde(rename = "Monto")]
-    Monto: i32,
-}
-
-#[derive(Serialize, Deserialize)]
-struct CommercialCode {
-    #[serde(rename = "Tipo")]
-    Tipo: i32,
-    #[serde(rename = "Codigo")]
-    Codigo: i32,
-}
-
-#[derive(Serialize, Deserialize)]
-struct ReceiptSummary {
-    #[serde(rename = "CodigoTipoMoneda")]
-    CodigoTipoMoneda: CurrencyCode,
-    #[serde(rename = "TotalServGravados")]
-    TotalServGravados: i32,
-    #[serde(rename = "TotalServExentos")]
-    TotalServExentos: i32,
-    #[serde(rename = "TotalMercanciasGravadas")]
-    TotalMercanciasGravadas: i32,
-    #[serde(rename = "TotalMercanciasExentas")]
-    TotalMercanciasExentas: i32,
-    #[serde(rename = "TotalMercExonerada")]
-    TotalMercExonerada: i32,
-    #[serde(rename = "TotalGravado")]
-    TotalGravado: i32,
-    #[serde(rename = "TotalExento")]
-    TotalExento: i32,
-    #[serde(rename = "TotalExonerado")]
-    TotalExonerado: i32,
-    #[serde(rename = "TotalVenta")]
-    TotalVenta: i32,
-    #[serde(rename = "TotalDescuentos")]
-    TotalDescuentos: i32,
-    #[serde(rename = "TotalVentaNeta")]
-    TotalVentaNeta: i32,
-    #[serde(rename = "TotalImpuesto")]
-    TotalImpuesto: i32,
-    #[serde(rename = "TotalIVADevuelto")]
-    TotalIVADevuelto: i32,
-    #[serde(rename = "TotalOtrosCargos")]
-    TotalOtrosCargos: i32,
-    #[serde(rename = "TotalComprobante")]
-    TotalComprobante: i32,
-}
-
-#[derive(Serialize, Deserialize)]
-struct CurrencyCode {
-    #[serde(rename = "CodigoMoneda")]
-    CodigoMoneda: String,
-    #[serde(rename = "TipoCambio")]
-    TipoCambio: i32,
-}
-TotalServGravados
 
     //DATABASE URL
 // const DB_URL: &str = env!("DATABASE_URL");
@@ -221,7 +101,7 @@ fn handle_client(mut stream: TcpStream) {
             println!("Received {} bytes", size);
             request.push_str(String::from_utf8_lossy(&buffer[..size]).as_ref());
             println!("Received XML:\n{}", request);
-            let body = get_user_request_body(&request);
+            let body = get_store_request_body(&request);
             // let receipt: Receipt = match from_str(&buffer) {
             match from_str::<Receipt>(&body) {
                 Ok(parsed_xml) => {
@@ -260,7 +140,7 @@ fn handle_client(mut stream: TcpStream) {
 
 //handle post request
 // fn handle_post_request(request: &str) -> (String, String) {
-//     match (get_user_request_body(&request), Client::connect(DB_URL, NoTls)) {
+//     match (get_store_request_body(&request), Client::connect(DB_URL, NoTls)) {
 //         (Ok(user), Ok(mut client)) => {
 //             client
 //                 .execute(
@@ -321,7 +201,7 @@ fn handle_client(mut stream: TcpStream) {
 //     match
 //         (
 //             get_id(&request).parse::<i32>(),
-//             get_user_request_body(&request),
+//             get_store_request_body(&request),
 //             Client::connect(DB_URL, NoTls),
 //         )
 //     {
@@ -377,7 +257,7 @@ fn handle_client(mut stream: TcpStream) {
 // }
 
 // //deserialize user from request body without id
-fn get_user_request_body(request: &str) -> &str {
+fn get_store_request_body(request: &str) -> &str {
     request.split("\r\n\r\n").last().unwrap_or_default()
     // serde_json::from_str(request.split("\r\n\r\n").last().unwrap_or_default())
 }
