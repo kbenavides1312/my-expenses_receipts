@@ -72,3 +72,4 @@ cargo run
 ```
 
 reference: https://dev.to/francescoxx/rust-crud-rest-api-3n45
+- https://alejandroaldana99.medium.com/c%C3%B3mo-crear-un-servidor-api-rest-con-rust-y-mongodb-2aae4e06d95c

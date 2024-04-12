@@ -3,7 +3,7 @@
 
 FROM rust:1.69-buster
 
-WORKDIR /app/receipts
+WORKDIR /app/stores
 
 ENTRYPOINT ["tail"]
 CMD ["-f","/dev/null"]

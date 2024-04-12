@@ -10,7 +10,7 @@ ARG DATABASE_URL
 ENV DATABASE_URL=$DATABASE_URL
 
 # Copy the source code
-COPY ./receipts-api .
+COPY ./stores-api .
 
 # Build the application
 RUN cargo build --release
@@ -21,6 +21,6 @@ FROM debian:buster-slim
 
 WORKDIR /usr/local/bin
 
-COPY --from=builder /app/target/release/receipts-api .
+COPY --from=builder /app/target/release/stores-api .
 
-CMD ["./receipts-api"]
+CMD ["./stores-api"]
