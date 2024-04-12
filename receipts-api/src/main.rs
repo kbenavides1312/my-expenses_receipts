@@ -57,11 +57,11 @@ fn handle_client(mut stream: TcpStream) {
             request.push_str(String::from_utf8_lossy(&buffer[..size]).as_ref());
 
             let (status_line, content) = match &*request {
-                r if r.starts_with("POST /users") => handle_post_request(r),
-                r if r.starts_with("GET /users/") => handle_get_request(r),
-                r if r.starts_with("GET /users") => handle_get_all_request(r),
-                r if r.starts_with("PUT /users/") => handle_put_request(r),
-                r if r.starts_with("DELETE /users/") => handle_delete_request(r),
+                r if r.starts_with("POST /api/users") => handle_post_request(r),
+                r if r.starts_with("GET /api/users/") => handle_get_request(r),
+                r if r.starts_with("GET /api/users") => handle_get_all_request(r),
+                r if r.starts_with("PUT /api/users/") => handle_put_request(r),
+                r if r.starts_with("DELETE /api/users/") => handle_delete_request(r),
                 _ => (NOT_FOUND.to_string(), "404 not found".to_string()),
             };
 

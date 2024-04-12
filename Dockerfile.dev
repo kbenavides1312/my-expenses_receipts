@@ -1,0 +1,9 @@
+
+# development
+
+FROM rust:1.69-buster
+
+WORKDIR /app/receipts
+
+ENTRYPOINT ["tail"]
+CMD ["-f","/dev/null"]

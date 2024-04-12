@@ -59,4 +59,16 @@ Create docker files
 touch .dockerignore Dockerfile docker-compose.yml
 ```
 
+inside dev container
+
+install dependencies and build debug binary
+```
+cargo build
+```
+
+run debug compiled binary
+```
+cargo run
+```
+
 reference: https://dev.to/francescoxx/rust-crud-rest-api-3n45
