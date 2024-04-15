@@ -1,9 +1,15 @@
 
 # development
 
-FROM rust:1.70-buster
+FROM python:3.11-alpine
 
-WORKDIR /app/stores
+WORKDIR /app
+
+# Install the Python dependencies
+COPY ./requirements.txt .
+RUN pip install -r requirements.txt
+
+WORKDIR /app/receipts
 
 ENTRYPOINT ["tail"]
 CMD ["-f","/dev/null"]
