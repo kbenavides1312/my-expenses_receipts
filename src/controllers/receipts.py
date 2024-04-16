@@ -41,5 +41,9 @@ class Receipt(Resource):
             )
             print(f'item: {item.get("Codigo", "Unknown")} => response: {response.status}, {response.data}')
 
-        return {"status": "completed"}, 200
+        response_headers = {
+            'Content-Type': 'application/json',
+            'Access-Control-Allow-Origin': 'http://localhost:3000',
+        }
+        return {"status": "completed"}, 200, response_headers
 
