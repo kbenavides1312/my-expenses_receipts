@@ -29,16 +29,20 @@ class Receipt(Resource):
         ReceiptModel().create_receipt(json_data)
         store_id = int(json_data["FacturaElectronica"]["Emisor"]["Identificacion"]["Numero"])
         user_id = 0
-        for item in json_data["FacturaElectronica"]["DetalleServicio"]["LineaDetalle"]:
-            response = http.request('PATCH',
-                url=os.environ["INVENTORY_SERVICE_URL"],
-                headers={'Content-Type': 'application/json'},
-                body=json.dumps({
-                    **item,
-                    "StoreId": store_id,
-                    "UserId": user_id,
-                }),
-            )
+        for detailLine in json_data["FacturaElectronica"]["DetalleServicio"].values():
+            if type(detailLine) is dict:
+                detailLine = [detailLine]
+            for item in detailLine:
+                response = http.request('PATCH',
+                    url=os.environ["INVENTORY_SERVICE_URL"],
+                    headers={'Content-Type': 'application/json'},
+                    body=json.dumps({
+                        **item,
+                        "StoreId": store_id,
+                        "UserId": user_id,
+                        "Codigo": f'{item["Codigo"]}-{item.get("CodigoComercial", {}).get("Codigo", "0")}',
+                    }),
+                )
             print(f'item: {item.get("Codigo", "Unknown")} => response: {response.status}, {response.data}')
 
         response_headers = {
