@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><FacturaElectronica xmlns="https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" xmlns:xades141="http://uri.etsi.org/01903/v1.4.1#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.4/facturaElectronica https://atv.hacienda.go.cr/ATV/ComprobanteElectronico/docs/esquemas/2024/v4.4/FacturaElectronica_V4.4.xsd">
+  <Clave>50609092500300404509902000003010000434074141576138</Clave>
+  <ProveedorSistemas>3004045099</ProveedorSistemas>
+  <CodigoActividadEmisor>521101</CodigoActividadEmisor>
+  <NumeroConsecutivo>02000003010000434074</NumeroConsecutivo>
+  <FechaEmision>2025-09-09T09:15:04-06:00</FechaEmision>
+  <Emisor>
+    <Nombre>CoopeAgri R.L.</Nombre>
+    <Identificacion>
+      <Tipo>02</Tipo>
+      <Numero>3004045099</Numero>
+    </Identificacion>
+    <NombreComercial>SUPERMERCADOS COOPEAGRI VILLA LIGIA</NombreComercial>
+    <Ubicacion>
+      <Provincia>1</Provincia>
+      <Canton>19</Canton>
+      <Distrito>01</Distrito>
+      <OtrasSenas>FRENTE ANTIGUA ESCUELA VILLA LIGIA, SOBRE CARRETERA INTERAMERICANA</OtrasSenas>
+    </Ubicacion>
+    <Telefono>
+      <CodigoPais>506</CodigoPais>
+      <NumTelefono>27850276</NumTelefono>
+    </Telefono>
+    <CorreoElectronico>coordinadoresvl@coopeagri.co.cr</CorreoElectronico>
+  </Emisor>
+  <Receptor>
+    <Nombre>BENAVIDES ROJAS KENNETH ALFONSO</Nombre>
+    <Identificacion>
+      <Tipo>01</Tipo>
+      <Numero>702240263</Numero>
+    </Identificacion>
+    <NombreComercial>BENAVIDES ROJAS KENNETH ALFONSO</NombreComercial>
+    <Ubicacion>
+      <Provincia>1</Provincia>
+      <Canton>19</Canton>
+      <Distrito>01</Distrito>
+      <OtrasSenas>PEREZ ZELEDON, SAN ISIDRO, BARRIO SINAI, RESIDENCIAL GINOS, APARTAMENTO 9</OtrasSenas>
+    </Ubicacion>
+    <Telefono>
+      <CodigoPais>506</CodigoPais>
+      <NumTelefono>87680457</NumTelefono>
+    </Telefono>
+    <CorreoElectronico>kbr1312@gmail.com</CorreoElectronico>
+  </Receptor>
+  <CondicionVenta>01</CondicionVenta>
+  <DetalleServicio>
+    <LineaDetalle>
+      <NumeroLinea>1</NumeroLinea>
+      <CodigoCABYS>0121402020800</CodigoCABYS>
+      <CodigoComercial>
+        <Tipo>01</Tipo>
+        <Codigo>080037</Codigo>
+      </CodigoComercial>
+      <Cantidad>3</Cantidad>
+      <UnidadMedida>Unid</UnidadMedida>
+      <UnidadMedidaComercial>Unidad Base</UnidadMedidaComercial>
+      <Detalle>VERDURA LECHUGA AMERICANA UNIDAD</Detalle>
+      <PrecioUnitario>400.9901</PrecioUnitario>
+      <MontoTotal>1202.9703</MontoTotal>
+      <SubTotal>1202.9703</SubTotal>
+      <BaseImponible>1202.9703</BaseImponible>
+      <Impuesto>
+        <Codigo>01</Codigo>
+        <CodigoTarifaIVA>02</CodigoTarifaIVA>
+        <Tarifa>1</Tarifa>
+        <Monto>12.0297</Monto>
+      </Impuesto>
+      <ImpuestoAsumidoEmisorFabrica>0</ImpuestoAsumidoEmisorFabrica>
+      <ImpuestoNeto>12.0297</ImpuestoNeto>
+      <MontoTotalLinea>1215</MontoTotalLinea>
+    </LineaDetalle>
+    <LineaDetalle>
+      <NumeroLinea>2</NumeroLinea>
+      <CodigoCABYS>0123902000100</CodigoCABYS>
+      <CodigoComercial>
+        <Tipo>01</Tipo>
+        <Codigo>080355</Codigo>
+      </CodigoComercial>
+      <Cantidad>1</Cantidad>
+      <UnidadMedida>Unid</UnidadMedida>
+      <UnidadMedidaComercial>Unidad Base</UnidadMedidaComercial>
+      <Detalle>VERDURA FINCA LA CABUYA CHAYOTE QUELITE BOLSA 3u</Detalle>
+      <PrecioUnitario>628.71287</PrecioUnitario>
+      <MontoTotal>628.71287</MontoTotal>
+      <SubTotal>628.71287</SubTotal>
+      <BaseImponible>628.71287</BaseImponible>
+      <Impuesto>
+        <Codigo>01</Codigo>
+        <CodigoTarifaIVA>02</CodigoTarifaIVA>
+        <Tarifa>1</Tarifa>
+        <Monto>6.28713</Monto>
+      </Impuesto>
+      <ImpuestoAsumidoEmisorFabrica>0</ImpuestoAsumidoEmisorFabrica>
+      <ImpuestoNeto>6.28713</ImpuestoNeto>
+      <MontoTotalLinea>635</MontoTotalLinea>
+    </LineaDetalle>
+    <LineaDetalle>
+      <NumeroLinea>3</NumeroLinea>
+      <CodigoCABYS>0129004020200</CodigoCABYS>
+      <CodigoComercial>
+        <Tipo>01</Tipo>
+        <Codigo>080034</Codigo>
+      </CodigoComercial>
+      <Cantidad>0.16</Cantidad>
+      <UnidadMedida>Kg</UnidadMedida>
+      <UnidadMedidaComercial>Kilogramos</UnidadMedidaComercial>
+      <Detalle>VERDURA APIO GRANEL 1000g</Detalle>
+      <PrecioUnitario>1624.75248</PrecioUnitario>
+      <MontoTotal>259.9604</MontoTotal>
+      <SubTotal>259.9604</SubTotal>
+      <BaseImponible>259.9604</BaseImponible>
+      <Impuesto>
+        <Codigo>01</Codigo>
+        <CodigoTarifaIVA>02</CodigoTarifaIVA>
+        <Tarifa>1</Tarifa>
+        <Monto>2.5996</Monto>
+      </Impuesto>
+      <ImpuestoAsumidoEmisorFabrica>0</ImpuestoAsumidoEmisorFabrica>
+      <ImpuestoNeto>2.5996</ImpuestoNeto>
+      <MontoTotalLinea>262.56</MontoTotalLinea>
+    </LineaDetalle>
+    <LineaDetalle>
+      <NumeroLinea>4</NumeroLinea>
+      <CodigoCABYS>0129019020200</CodigoCABYS>
+      <CodigoComercial>
+        <Tipo>01</Tipo>
+        <Codigo>080028</Codigo>
+      </CodigoComercial>
+      <Cantidad>2</Cantidad>
+      <UnidadMedida>Unid</UnidadMedida>
+      <UnidadMedidaComercial>Unidad Base</UnidadMedidaComercial>
+      <Detalle>VERDURA CULANTRO CASTILLA ROLLO</Detalle>
+      <PrecioUnitario>242.57426</PrecioUnitario>
+      <MontoTotal>485.14852</MontoTotal>
+      <SubTotal>485.14852</SubTotal>
+      <BaseImponible>485.14852</BaseImponible>
+      <Impuesto>
+        <Codigo>01</Codigo>
+        <CodigoTarifaIVA>02</CodigoTarifaIVA>
+        <Tarifa>1</Tarifa>
+        <Monto>4.85149</Monto>
+      </Impuesto>
+      <ImpuestoAsumidoEmisorFabrica>0</ImpuestoAsumidoEmisorFabrica>
+      <ImpuestoNeto>4.85149</ImpuestoNeto>
+      <MontoTotalLinea>490.00001</MontoTotalLinea>
+    </LineaDetalle>
+    <LineaDetalle>
+      <NumeroLinea>5</NumeroLinea>
+      <CodigoCABYS>0122100009900</CodigoCABYS>
+      <CodigoComercial>
+        <Tipo>01</Tipo>
+        <Codigo>080057</Codigo>
+      </CodigoComercial>
+      <Cantidad>1.54</Cantidad>
+      <UnidadMedida>Kg</UnidadMedida>
+      <UnidadMedidaComercial>Kilogramos</UnidadMedidaComercial>
+      <Detalle>FRUTA SANDIA GRANEL 1000g</Detalle>
+      <PrecioUnitario>724.75248</PrecioUnitario>
+      <MontoTotal>1116.11882</MontoTotal>
+      <SubTotal>1116.11882</SubTotal>
+      <BaseImponible>1116.11882</BaseImponible>
+      <Impuesto>
+        <Codigo>01</Codigo>
+        <CodigoTarifaIVA>02</CodigoTarifaIVA>
+        <Tarifa>1</Tarifa>
+        <Monto>11.16119</Monto>
+      </Impuesto>
+      <ImpuestoAsumidoEmisorFabrica>0</ImpuestoAsumidoEmisorFabrica>
+      <ImpuestoNeto>11.16119</ImpuestoNeto>
+      <MontoTotalLinea>1127.28001</MontoTotalLinea>
+    </LineaDetalle>
+    <LineaDetalle>
+      <NumeroLinea>6</NumeroLinea>
+      <CodigoCABYS>0131100029900</CodigoCABYS>
+      <CodigoComercial>
+        <Tipo>01</Tipo>
+        <Codigo>080056</Codigo>
+      </CodigoComercial>
+      <Cantidad>0.695</Cantidad>
+      <UnidadMedida>Kg</UnidadMedida>
+      <UnidadMedidaComercial>Kilogramos</UnidadMedidaComercial>
+      <Detalle>VERDURA AGUACATE GRANEL 1000g</Detalle>
+      <PrecioUnitario>1907.92079</PrecioUnitario>
+      <MontoTotal>1326.00495</MontoTotal>
+      <SubTotal>1326.00495</SubTotal>
+      <BaseImponible>1326.00495</BaseImponible>
+      <Impuesto>
+        <Codigo>01</Codigo>
+        <CodigoTarifaIVA>02</CodigoTarifaIVA>
+        <Tarifa>1</Tarifa>
+        <Monto>13.26005</Monto>
+      </Impuesto>
+      <ImpuestoAsumidoEmisorFabrica>0</ImpuestoAsumidoEmisorFabrica>
+      <ImpuestoNeto>13.26005</ImpuestoNeto>
+      <MontoTotalLinea>1339.265</MontoTotalLinea>
+    </LineaDetalle>
+    <LineaDetalle>
+      <NumeroLinea>7</NumeroLinea>
+      <CodigoCABYS>0132200000300</CodigoCABYS>
+      <CodigoComercial>
+        <Tipo>01</Tipo>
+        <Codigo>080002</Codigo>
+      </CodigoComercial>
+      <Cantidad>4</Cantidad>
+      <UnidadMedida>Unid</UnidadMedida>
+      <UnidadMedidaComercial>Unidad Base</UnidadMedidaComercial>
+      <Detalle>FRUTA MANDARINA UNIDAD</Detalle>
+      <PrecioUnitario>69.30693</PrecioUnitario>
+      <MontoTotal>277.22772</MontoTotal>
+      <SubTotal>277.22772</SubTotal>
+      <BaseImponible>277.22772</BaseImponible>
+      <Impuesto>
+        <Codigo>01</Codigo>
+        <CodigoTarifaIVA>02</CodigoTarifaIVA>
+        <Tarifa>1</Tarifa>
+        <Monto>2.77228</Monto>
+      </Impuesto>
+      <ImpuestoAsumidoEmisorFabrica>0</ImpuestoAsumidoEmisorFabrica>
+      <ImpuestoNeto>2.77228</ImpuestoNeto>
+      <MontoTotalLinea>280</MontoTotalLinea>
+    </LineaDetalle>
+    <LineaDetalle>
+      <NumeroLinea>8</NumeroLinea>
+      <CodigoCABYS>0159102010000</CodigoCABYS>
+      <CodigoComercial>
+        <Tipo>01</Tipo>
+        <Codigo>080047</Codigo>
+      </CodigoComercial>
+      <Cantidad>0.32</Cantidad>
+      <UnidadMedida>Kg</UnidadMedida>
+      <UnidadMedidaComercial>Kilogramos</UnidadMedidaComercial>
+      <Detalle>VERDURA TIQUISQUE GRANEL 1000g</Detalle>
+      <PrecioUnitario>1000</PrecioUnitario>
+      <MontoTotal>320</MontoTotal>
+      <SubTotal>320</SubTotal>
+      <BaseImponible>320</BaseImponible>
+      <Impuesto>
+        <Codigo>01</Codigo>
+        <CodigoTarifaIVA>02</CodigoTarifaIVA>
+        <Tarifa>1</Tarifa>
+        <Monto>3.2</Monto>
+      </Impuesto>
+      <ImpuestoAsumidoEmisorFabrica>0</ImpuestoAsumidoEmisorFabrica>
+      <ImpuestoNeto>3.2</ImpuestoNeto>
+      <MontoTotalLinea>323.2</MontoTotalLinea>
+    </LineaDetalle>
+    <LineaDetalle>
+      <NumeroLinea>9</NumeroLinea>
+      <CodigoCABYS>0159101010000</CodigoCABYS>
+      <CodigoComercial>
+        <Tipo>01</Tipo>
+        <Codigo>080014</Codigo>
+      </CodigoComercial>
+      <Cantidad>0.17</Cantidad>
+      <UnidadMedida>Kg</UnidadMedida>
+      <UnidadMedidaComercial>Kilogramos</UnidadMedidaComercial>
+      <Detalle>VERDURA ÑAMPI GRANEL 1000g</Detalle>
+      <PrecioUnitario>1250.49505</PrecioUnitario>
+      <MontoTotal>212.58416</MontoTotal>
+      <SubTotal>212.58416</SubTotal>
+      <BaseImponible>212.58416</BaseImponible>
+      <Impuesto>
+        <Codigo>01</Codigo>
+        <CodigoTarifaIVA>02</CodigoTarifaIVA>
+        <Tarifa>1</Tarifa>
+        <Monto>2.12584</Monto>
+      </Impuesto>
+      <ImpuestoAsumidoEmisorFabrica>0</ImpuestoAsumidoEmisorFabrica>
+      <ImpuestoNeto>2.12584</ImpuestoNeto>
+      <MontoTotalLinea>214.71</MontoTotalLinea>
+    </LineaDetalle>
+    <LineaDetalle>
+      <NumeroLinea>10</NumeroLinea>
+      <CodigoCABYS>0152000010000</CodigoCABYS>
+      <CodigoComercial>
+        <Tipo>01</Tipo>
+        <Codigo>080044</Codigo>
+      </CodigoComercial>
+      <Cantidad>0.89</Cantidad>
+      <UnidadMedida>Kg</UnidadMedida>
+      <UnidadMedidaComercial>Kilogramos</UnidadMedidaComercial>
+      <Detalle>VERDURA YUCA GRANEL 1000g</Detalle>
+      <PrecioUnitario>984.15842</PrecioUnitario>
+      <MontoTotal>875.90099</MontoTotal>
+      <SubTotal>875.90099</SubTotal>
+      <BaseImponible>875.90099</BaseImponible>
+      <Impuesto>
+        <Codigo>01</Codigo>
+        <CodigoTarifaIVA>02</CodigoTarifaIVA>
+        <Tarifa>1</Tarifa>
+        <Monto>8.75901</Monto>
+      </Impuesto>
+      <ImpuestoAsumidoEmisorFabrica>0</ImpuestoAsumidoEmisorFabrica>
+      <ImpuestoNeto>8.75901</ImpuestoNeto>
+      <MontoTotalLinea>884.66</MontoTotalLinea>
+    </LineaDetalle>
+    <LineaDetalle>
+      <NumeroLinea>11</NumeroLinea>
+      <CodigoCABYS>0121301029900</CodigoCABYS>
+      <CodigoComercial>
+        <Tipo>01</Tipo>
+        <Codigo>080019</Codigo>
+      </CodigoComercial>
+      <Cantidad>0.385</Cantidad>
+      <UnidadMedida>Kg</UnidadMedida>
+      <UnidadMedidaComercial>Kilogramos</UnidadMedidaComercial>
+      <Detalle>VERDURA BROCOLI GRANEL 1000g</Detalle>
+      <PrecioUnitario>937.16814</PrecioUnitario>
+      <MontoTotal>360.80973</MontoTotal>
+      <SubTotal>360.80973</SubTotal>
+      <BaseImponible>360.80973</BaseImponible>
+      <Impuesto>
+        <Codigo>01</Codigo>
+        <CodigoTarifaIVA>08</CodigoTarifaIVA>
+        <Tarifa>13</Tarifa>
+        <Monto>46.90526</Monto>
+      </Impuesto>
+      <ImpuestoAsumidoEmisorFabrica>0</ImpuestoAsumidoEmisorFabrica>
+      <ImpuestoNeto>46.90526</ImpuestoNeto>
+      <MontoTotalLinea>407.71499</MontoTotalLinea>
+    </LineaDetalle>
+    <LineaDetalle>
+      <NumeroLinea>12</NumeroLinea>
+      <CodigoCABYS>2392903000100</CodigoCABYS>
+      <CodigoComercial>
+        <Tipo>01</Tipo>
+        <Codigo>080007</Codigo>
+      </CodigoComercial>
+      <Cantidad>1</Cantidad>
+      <UnidadMedida>Unid</UnidadMedida>
+      <UnidadMedidaComercial>Unidad Base</UnidadMedidaComercial>
+      <Detalle>ESPECIE TOMILLO ROLLO 50g</Detalle>
+      <PrecioUnitario>683.16832</PrecioUnitario>
+      <MontoTotal>683.16832</MontoTotal>
+      <SubTotal>683.16832</SubTotal>
+      <BaseImponible>683.16832</BaseImponible>
+      <Impuesto>
+        <Codigo>01</Codigo>
+        <CodigoTarifaIVA>02</CodigoTarifaIVA>
+        <Tarifa>1</Tarifa>
+        <Monto>6.83168</Monto>
+      </Impuesto>
+      <ImpuestoAsumidoEmisorFabrica>0</ImpuestoAsumidoEmisorFabrica>
+      <ImpuestoNeto>6.83168</ImpuestoNeto>
+      <MontoTotalLinea>690</MontoTotalLinea>
+    </LineaDetalle>
+    <LineaDetalle>
+      <NumeroLinea>13</NumeroLinea>
+      <CodigoCABYS>0133000000600</CodigoCABYS>
+      <CodigoComercial>
+        <Tipo>01</Tipo>
+        <Codigo>080294</Codigo>
+      </CodigoComercial>
+      <Cantidad>1</Cantidad>
+      <UnidadMedida>Unid</UnidadMedida>
+      <UnidadMedidaComercial>Unidad Base</UnidadMedidaComercial>
+      <Detalle>FRUTA UVA GLOBO BANDEJA 500g</Detalle>
+      <PrecioUnitario>1495.57522</PrecioUnitario>
+      <MontoTotal>1495.57522</MontoTotal>
+      <SubTotal>1495.57522</SubTotal>
+      <BaseImponible>1495.57522</BaseImponible>
+      <Impuesto>
+        <Codigo>01</Codigo>
+        <CodigoTarifaIVA>08</CodigoTarifaIVA>
+        <Tarifa>13</Tarifa>
+        <Monto>194.42478</Monto>
+      </Impuesto>
+      <ImpuestoAsumidoEmisorFabrica>0</ImpuestoAsumidoEmisorFabrica>
+      <ImpuestoNeto>194.42478</ImpuestoNeto>
+      <MontoTotalLinea>1690</MontoTotalLinea>
+    </LineaDetalle>
+    <LineaDetalle>
+      <NumeroLinea>14</NumeroLinea>
+      <CodigoCABYS>0131302000200</CodigoCABYS>
+      <CodigoComercial>
+        <Tipo>01</Tipo>
+        <Codigo>080051</Codigo>
+      </CodigoComercial>
+      <Cantidad>2</Cantidad>
+      <UnidadMedida>Unid</UnidadMedida>
+      <UnidadMedidaComercial>Unidad Base</UnidadMedidaComercial>
+      <Detalle>VERDURA PLATANO UNIDAD</Detalle>
+      <PrecioUnitario>237.62376</PrecioUnitario>
+      <MontoTotal>475.24752</MontoTotal>
+      <SubTotal>475.24752</SubTotal>
+      <BaseImponible>475.24752</BaseImponible>
+      <Impuesto>
+        <Codigo>01</Codigo>
+        <CodigoTarifaIVA>02</CodigoTarifaIVA>
+        <Tarifa>1</Tarifa>
+        <Monto>4.75248</Monto>
+      </Impuesto>
+      <ImpuestoAsumidoEmisorFabrica>0</ImpuestoAsumidoEmisorFabrica>
+      <ImpuestoNeto>4.75248</ImpuestoNeto>
+      <MontoTotalLinea>480</MontoTotalLinea>
+    </LineaDetalle>
+    <LineaDetalle>
+      <NumeroLinea>15</NumeroLinea>
+      <CodigoCABYS>0134100000800</CodigoCABYS>
+      <CodigoComercial>
+        <Tipo>01</Tipo>
+        <Codigo>080075</Codigo>
+      </CodigoComercial>
+      <Cantidad>2</Cantidad>
+      <UnidadMedida>Unid</UnidadMedida>
+      <UnidadMedidaComercial>Unidad Base</UnidadMedidaComercial>
+      <Detalle>FRUTA MANZANA VERDE UNIDAD</Detalle>
+      <PrecioUnitario>396.0396</PrecioUnitario>
+      <MontoTotal>792.0792</MontoTotal>
+      <SubTotal>792.0792</SubTotal>
+      <BaseImponible>792.0792</BaseImponible>
+      <Impuesto>
+        <Codigo>01</Codigo>
+        <CodigoTarifaIVA>02</CodigoTarifaIVA>
+        <Tarifa>1</Tarifa>
+        <Monto>7.92079</Monto>
+      </Impuesto>
+      <ImpuestoAsumidoEmisorFabrica>0</ImpuestoAsumidoEmisorFabrica>
+      <ImpuestoNeto>7.92079</ImpuestoNeto>
+      <MontoTotalLinea>799.99999</MontoTotalLinea>
+    </LineaDetalle>
+    <LineaDetalle>
+      <NumeroLinea>16</NumeroLinea>
+      <CodigoCABYS>0125101029900</CodigoCABYS>
+      <CodigoComercial>
+        <Tipo>01</Tipo>
+        <Codigo>080043</Codigo>
+      </CodigoComercial>
+      <Cantidad>0.485</Cantidad>
+      <UnidadMedida>Kg</UnidadMedida>
+      <UnidadMedidaComercial>Kilogramos</UnidadMedidaComercial>
+      <Detalle>VERDURA ZANAHORIA GRANEL 1000g</Detalle>
+      <PrecioUnitario>468.31683</PrecioUnitario>
+      <MontoTotal>227.13366</MontoTotal>
+      <SubTotal>227.13366</SubTotal>
+      <BaseImponible>227.13366</BaseImponible>
+      <Impuesto>
+        <Codigo>01</Codigo>
+        <CodigoTarifaIVA>02</CodigoTarifaIVA>
+        <Tarifa>1</Tarifa>
+        <Monto>2.27134</Monto>
+      </Impuesto>
+      <ImpuestoAsumidoEmisorFabrica>0</ImpuestoAsumidoEmisorFabrica>
+      <ImpuestoNeto>2.27134</ImpuestoNeto>
+      <MontoTotalLinea>229.405</MontoTotalLinea>
+    </LineaDetalle>
+    <LineaDetalle>
+      <NumeroLinea>17</NumeroLinea>
+      <CodigoCABYS>0132403000200</CodigoCABYS>
+      <CodigoComercial>
+        <Tipo>01</Tipo>
+        <Codigo>080159</Codigo>
+      </CodigoComercial>
+      <Cantidad>0.27</Cantidad>
+      <UnidadMedida>Kg</UnidadMedida>
+      <UnidadMedidaComercial>Kilogramos</UnidadMedidaComercial>
+      <Detalle>FRUTA MANDARINA CLEMENTINA GRANEL 1000g</Detalle>
+      <PrecioUnitario>1548.67257</PrecioUnitario>
+      <MontoTotal>418.14159</MontoTotal>
+      <SubTotal>418.14159</SubTotal>
+      <BaseImponible>418.14159</BaseImponible>
+      <Impuesto>
+        <Codigo>01</Codigo>
+        <CodigoTarifaIVA>08</CodigoTarifaIVA>
+        <Tarifa>13</Tarifa>
+        <Monto>54.35841</Monto>
+      </Impuesto>
+      <ImpuestoAsumidoEmisorFabrica>0</ImpuestoAsumidoEmisorFabrica>
+      <ImpuestoNeto>54.35841</ImpuestoNeto>
+      <MontoTotalLinea>472.5</MontoTotalLinea>
+    </LineaDetalle>
+    <LineaDetalle>
+      <NumeroLinea>18</NumeroLinea>
+      <CodigoCABYS>0125200000200</CodigoCABYS>
+      <CodigoComercial>
+        <Tipo>01</Tipo>
+        <Codigo>080156</Codigo>
+      </CodigoComercial>
+      <Cantidad>1</Cantidad>
+      <UnidadMedida>Unid</UnidadMedida>
+      <UnidadMedidaComercial>Unidad Base</UnidadMedidaComercial>
+      <Detalle>VERDURA AJOS MALLA 3u</Detalle>
+      <PrecioUnitario>148.51485</PrecioUnitario>
+      <MontoTotal>148.51485</MontoTotal>
+      <SubTotal>148.51485</SubTotal>
+      <BaseImponible>148.51485</BaseImponible>
+      <Impuesto>
+        <Codigo>01</Codigo>
+        <CodigoTarifaIVA>02</CodigoTarifaIVA>
+        <Tarifa>1</Tarifa>
+        <Monto>1.48515</Monto>
+      </Impuesto>
+      <ImpuestoAsumidoEmisorFabrica>0</ImpuestoAsumidoEmisorFabrica>
+      <ImpuestoNeto>1.48515</ImpuestoNeto>
+      <MontoTotalLinea>150</MontoTotalLinea>
+    </LineaDetalle>
+  </DetalleServicio>
+  <ResumenFactura>
+    <CodigoTipoMoneda>
+      <CodigoMoneda>CRC</CodigoMoneda>
+      <TipoCambio>1</TipoCambio>
+    </CodigoTipoMoneda>
+    <TotalMercanciasGravadas>11305.29882</TotalMercanciasGravadas>
+    <TotalGravado>11305.29882</TotalGravado>
+    <TotalVenta>11305.29882</TotalVenta>
+    <TotalVentaNeta>11305.29882</TotalVentaNeta>
+    <TotalDesgloseImpuesto>
+      <Codigo>01</Codigo>
+      <CodigoTarifaIVA>02</CodigoTarifaIVA>
+      <TotalMontoImpuesto>90.30773</TotalMontoImpuesto>
+    </TotalDesgloseImpuesto>
+    <TotalDesgloseImpuesto>
+      <Codigo>01</Codigo>
+      <CodigoTarifaIVA>08</CodigoTarifaIVA>
+      <TotalMontoImpuesto>295.68845</TotalMontoImpuesto>
+    </TotalDesgloseImpuesto>
+    <TotalImpuesto>385.99618</TotalImpuesto>
+    <MedioPago>
+      <TipoMedioPago>02</TipoMedioPago>
+      <TotalMedioPago>11691.295</TotalMedioPago>
+    </MedioPago>
+    <TotalComprobante>11691.295</TotalComprobante>
+  </ResumenFactura>
+  <InformacionReferencia>
+    <TipoDocIR>99</TipoDocIR>
+    <TipoDocRefOTRO>Código de documento generado por sistema interno.</TipoDocRefOTRO>
+    <Numero>FCO02132007SE03</Numero>
+    <FechaEmisionIR>2025-09-09T09:15:04</FechaEmisionIR>
+    <Codigo>99</Codigo>
+    <CodigoReferenciaOTRO>Referencia a documento generado por sistema interno.</CodigoReferenciaOTRO>
+    <Razon>Referencia a documento interno.</Razon>
+  </InformacionReferencia>
+  <Otros>
+    <OtroTexto codigo="XFAC_CODFAC">FCO02132007SE03</OtroTexto>
+  </Otros>
+<ds:Signature Id="xmldsig-070cd5bf-233e-4e72-88a0-10d5d1b2c04a" xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:SignedInfo>
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+<ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+<ds:Reference Id="xmldsig-070cd5bf-233e-4e72-88a0-10d5d1b2c04a-ref0" URI="">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+<ds:Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+<ds:DigestValue>CskPqE/Ow/zxIdlVTWxqGBC6DhmIJbDUKmIblaWvhpA=</ds:DigestValue>
+</ds:Reference>
+<ds:Reference Type="http://uri.etsi.org/01903#SignedProperties" URI="#xmldsig-070cd5bf-233e-4e72-88a0-10d5d1b2c04a-signedprops">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+<ds:DigestValue>ehQRvM/g3WfJvkTuCCGpid+ToDafdc7+EXv2RYgA3Js=</ds:DigestValue>
+</ds:Reference>
+</ds:SignedInfo>
+<ds:SignatureValue Id="xmldsig-070cd5bf-233e-4e72-88a0-10d5d1b2c04a-sigvalue">
+fcwKb6wrcTtF1XQWXYKB/cBjIIu5XrgaMukcb7Rt90MFwgd+QR6tu0K1tZ9kP1MLjS3nNISM1/n0&#13;
+ZeCHnCgm7RykRzsk7JK5vxL5Xk58mcsHqPWokcnIOy/H/0Vmo+eeBQ1PqTAkS0Mm62Dr99pOLbx2&#13;
+wcTt7YRCO71q3vsg8cQtC7FJXEmC8clAmGcd0xozfSdALgt4Zq8gMlKZsJiR7JjWAbY8qrVHqRbj&#13;
++u2N3holZJEeOOzKCsmRbD4JSK+NaN1LMuGG1CuHayHcqnG+8aSvz8UMlnrlCICPTc/r1J4V4iSW&#13;
+P06Be7sS+RBTa/wwy0YTjrH3lo6uU2lJOIq2Lw==
+</ds:SignatureValue>
+<ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:X509Data>
+<ds:X509Certificate>
+MIIFSTCCAzGgAwIBAgIGAYOfs5sBMA0GCSqGSIb3DQEBCwUAMFoxCzAJBgNVBAYTAkNSMR8wHQYD&#13;
+VQQKDBZNSU5JU1RFUklPIERFIEhBQ0lFTkRBMQwwCgYDVQQLDANER1QxHDAaBgNVBAMME0NBIFBF&#13;
+UlNPTkEgSlVSSURJQ0EwHhcNMjIxMDAzMjExNDUxWhcNMjYxMDAyMjExNDUxWjCBozEZMBcGA1UE&#13;
+BRMQQ1BKLTMtMDA0LTA0NTA5OTELMAkGA1UEBhMCQ1IxGTAXBgNVBAoMEFBFUlNPTkEgSlVSSURJ&#13;
+Q0ExDDAKBgNVBAsMA0NQSjFQME4GA1UEAwxHQ09PUEVSQVRJVkEgQUdSSUNPTEEgSU5EVVNUUklB&#13;
+TCBZIERFIFNFUlZJQ0lPUyBNVUxUSVBMRVMgRUwgR0VORVJBTCBSIEwwggEiMA0GCSqGSIb3DQEB&#13;
+AQUAA4IBDwAwggEKAoIBAQCCC+sD26ipZgt2u5bfVJk0NVLb6rB/kMjOW6XehVJh3reQ0tM5+Tuf&#13;
+435ixtPo+RdUXHqvCa1kvE6f4O/XSDftxE1s2SKUgcWOTMQFXwKv6uBtnJPQRMi94wkkL7XCkriS&#13;
+kmQBabO1W+RBgFGpLZAC78jHnh01q1+WMF/pBE1hoGhK38ttJTv8MIesCpjik/GYXRsMVH5DJ2ee&#13;
+rnSYOGyttUEoCmnA8S3qBzufyjgw1HhvzbwsPGpr00KkNyMMK/CztDrdxOE6CgnjYE9jLavKO+vE&#13;
+8NHFTi7GA5XwDE7Ty13ofqrDmPaCMf71EAGEZUamNsnqKoS8ptjMeCXywFvnAgMBAAGjgcowgccw&#13;
+HwYDVR0jBBgwFoAUO21X9dZ86Z4QAiBB470azM+zTpUwHQYDVR0OBBYEFCe2CfEDGBOwcQv8izhK&#13;
+DsOI7hhHMAsGA1UdDwQEAwIGwDATBgNVHSUEDDAKBggrBgEFBQcDBDBjBggrBgEFBQcBAQRXMFUw&#13;
+UwYIKwYBBQUHMAKGR2h0dHBzOi8vcGtpLmNvbXByb2JhbnRlc2VsZWN0cm9uaWNvcy5nby5jci9w&#13;
+cm9kL2ludGVybWVkaWF0ZS1wai1wZW0uY3J0MA0GCSqGSIb3DQEBCwUAA4ICAQB9VOc+558XvBZS&#13;
+zaPOPaV8I47GVgX4D/vVtuiqXYPk4PuoiRzFMvAcNd954HR3YhXo7QHk+7bQX0mAULKiKSvztecv&#13;
+jg+QxAmtEIrsp0ol5GeBJjndKfgulf47m6TDdlBmpNzK5E8a6g1dswG9KfdLkEycsjFoZvIpYo1v&#13;
+i2OVROnFaC0EZaBXkNlhPr8wMY4M7dhvF6t93JeXqwwFp4sQi78vhJdWC6zUc2qFKYn+M6/fyS3R&#13;
+yq0KC9vQPKQ2T0EZeNtHZs/1gH23QMi3cX45Dds09Q82nrpCZsDkuUDzv1ui3Fi0a4yKiNo2cymf&#13;
+oqp1WF5j5dMconKQAxJE/YSbb8KLTnqpVI+JDryuUhb4xeElkXdKtVmEK/uYi02fSu8Dzssowfxf&#13;
+VovWvuYd0UponhM4be0HPode6+0uxoA+K21fHkmlNsdMsoPmejkjE88lVEYZc/IUMs8tGcuL/WRL&#13;
+N8vUX2wRdRmd5t1lIWy7bhcED5cORcB57v5AGpAnwuOc8u3vFX/e/zE6/c/Bb/R644TnNjwViS29&#13;
+gsj8wLVPhoxepQ0B+fdlinNv1SIi7UOhCk3L7wi1C8B9DLmHh6W/LBiM8UXo4obuwEFIdc3uJdML&#13;
+7tj1QZCH1ZvNt8+hzaE/76FXJmEXCcqZWX3BUfZL5NQzai6OVJNh4jM3YERp0w==
+</ds:X509Certificate>
+</ds:X509Data>
+</ds:KeyInfo>
+<ds:Object><xades:QualifyingProperties Target="#xmldsig-070cd5bf-233e-4e72-88a0-10d5d1b2c04a" xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" xmlns:xades141="http://uri.etsi.org/01903/v1.4.1#"><xades:SignedProperties Id="xmldsig-070cd5bf-233e-4e72-88a0-10d5d1b2c04a-signedprops"><xades:SignedSignatureProperties><xades:SigningTime>2025-09-09T09:15:30.370-06:00</xades:SigningTime><xades:SigningCertificate><xades:Cert><xades:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>7Wy4upynuDDj5gr/+3W5JEh/lPpy8o9GnRd2W7EBFG0=</ds:DigestValue></xades:CertDigest><xades:IssuerSerial><ds:X509IssuerName>cn=CA PERSONA JURIDICA,ou=DGT,o=MINISTERIO DE HACIENDA,c=CR</ds:X509IssuerName><ds:X509SerialNumber>1664831691521</ds:X509SerialNumber></xades:IssuerSerial></xades:Cert></xades:SigningCertificate><xades:SignaturePolicyIdentifier><xades:SignaturePolicyId><xades:SigPolicyId><xades:Identifier>https://tribunet.hacienda.go.cr/docs/esquemas/2017/v4.2/Resolucion_Comprobantes_Electronicos_DGT-R-48-2016.pdf</xades:Identifier></xades:SigPolicyId><xades:SigPolicyHash><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=</ds:DigestValue></xades:SigPolicyHash></xades:SignaturePolicyId></xades:SignaturePolicyIdentifier></xades:SignedSignatureProperties><xades:SignedDataObjectProperties><xades:DataObjectFormat ObjectReference="#xmldsig-070cd5bf-233e-4e72-88a0-10d5d1b2c04a-ref0"><xades:MimeType>application/octet-stream</xades:MimeType><xades:Encoding>UTF-8</xades:Encoding></xades:DataObjectFormat></xades:SignedDataObjectProperties></xades:SignedProperties></xades:QualifyingProperties></ds:Object>
+</ds:Signature></FacturaElectronica>

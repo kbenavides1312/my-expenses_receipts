@@ -53,6 +53,8 @@ class Receipt(Resource):
             if type(detailLine) is dict:
                 detailLine = [detailLine]
             for item in detailLine:
+                if "Codigo" not in item:
+                    item["Codigo"] = item.get("CodigoCABYS", "Unknown")
                 response = http.request('PATCH',
                     url=os.environ["INVENTORY_SERVICE_URL"],
                     headers={'Content-Type': 'application/json'},
