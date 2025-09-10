@@ -9,7 +9,9 @@ WORKDIR /app
 COPY ./requirements.txt .
 RUN pip install -r requirements.txt
 
-WORKDIR /app/receipts
+COPY ./src .
 
-ENTRYPOINT ["tail"]
-CMD ["-f","/dev/null"]
+
+
+ENTRYPOINT ["python"]
+CMD ["server.py"]

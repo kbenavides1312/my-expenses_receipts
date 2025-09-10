@@ -6,6 +6,7 @@ import xmltodict
 from flask import request
 from flask_restful import Resource, reqparse
 from models.receipts_model import ReceiptModel
+from flasgger import Swagger
 
 http = urllib3.PoolManager()
 
@@ -13,10 +14,29 @@ http = urllib3.PoolManager()
 class Receipt(Resource):
     
     def get(self):
+        """
+        Retrieve all receipts
+        ---
+        responses:
+          200:
+            description: A list of receipts
+            schema:
+              type: array
+              items:
+                type: object
+        """
         logging.info("getting all receipts")
         return ReceiptModel().get_all_receipts(),200
     
     def post(self):
+        """
+        Creates a receipt
+        ---
+        parameters:
+          - in: body
+            name: body
+            type: object
+        """
         data = request.data
         print(request.headers)
         content_type = request.headers.get('Content-Type').lower()

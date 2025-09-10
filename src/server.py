@@ -3,6 +3,7 @@ from flask import Flask, request
 # from flask_cors import CORS
 from flask_restful import Api
 from flask_jwt_extended import jwt_required, JWTManager
+from flasgger import Swagger
 
 from controllers.status import Status
 from controllers.receipts import Receipt
@@ -16,6 +17,7 @@ jwt = JWTManager(api.app)
 
 api.add_resource(Status, '/status')
 api.add_resource(Receipt, '/api/receipts')
+swagger = Swagger(app)
 
 # CORS(app)
 
